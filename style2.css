@@ -1,0 +1,156 @@
+html{
+	width: 960px;
+}
+
+div.topelements{
+	background: white;
+}
+
+div.header{
+
+	font-size: 40px;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	background: teal;
+	border-bottom: solid #dddddd;
+	color: white;
+	margin-left: 15px;
+	margin-bottom: 20px;
+	text-align: left;
+	float: left;
+	padding: 10px 10px 10px 10px;
+}
+
+div.sidebar{
+	width: 270;
+	float: right;
+}
+
+div.about{
+	float: right;
+	width: 20%;
+	padding: 10px 10px 10px 10px;
+	border-right: solid grey; 
+	text-align: center;
+}
+
+div.portfolio{
+	float: right;
+	width: 25%;
+	padding: 10px 10px 10px 10px;
+	text-align: center;
+
+}
+
+div.contact{
+	float: right;
+	width: 20%;
+	padding-top: 20px;
+	padding: 10px 10px 10px 10px;
+	border-left: solid grey; 
+	text-align: center;
+
+}
+
+
+div.mainbody{
+
+	width: 650px;
+	clear: both;
+	border-top: solid lightgrey;
+	float: left;
+}
+
+
+div.maintext{
+	margin-left: 20px;
+	background: #ffffff;
+	width: 70%;
+	padding:50px 50px 50px 50px;
+}
+
+div.aboutme{
+
+	font-size: 25px;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	width: 100%;
+	float: left;
+	border-bottom: solid lightgrey;
+	color: #4aaaa5;
+	font-weight: bold;
+	padding-bottom: 20px;
+}	
+
+img{
+	float: left;
+	}
+
+
+div.bio{
+	padding-top: 10px;
+	float: right;
+		font-family: Helvetica;
+		color: gray;
+
+
+
+}
+
+div.one {
+	background: #4aaaa5;
+	text-align: center;
+	width: 15%;
+	margin-bottom: 20px;
+}
+
+
+
+div.three {
+
+	float: left;
+
+	text-align: center;
+}
+
+div.footer {
+	clear: both;
+	text-align: center;
+	background: #666666;
+	border-top: solid #4aaaa5;
+}
+
+div.linksquare{
+
+	float: right;
+	margin-top: 100px;
+	color: #4aaaa5;
+	font-size: 25px;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+div.contactbody{
+	clear: both;
+	width: 650px;
+	clear: both;
+	border-top: solid lightgrey;
+	float: left;
+}
+
+
+img{
+
+	margin:10px 10px 10px 10px;
+}
+
+div.picturetitle{
+
+	float: left;
+	width: 50px;
+	background: #4aaaa5;
+	color: white;
+	font-size: 20px;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+div.mainportfolio{
+	position: relative;
+}
