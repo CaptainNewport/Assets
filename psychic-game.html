@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>My First Object</title>
+  </head>
+  <body>
+    <header>
+      Guess what I'm thinking. Or don't, I'm a program not a cop.
+        <h1>
+        Guess a letter, any letter.
+        </h1>
+    </header>
+
+      <p id ="victories"> </p>
+      <p id ="failures"> </p>
+      <p id ="guessesLeft"> </p>
+      <p id ="guessesSoFar"> </p>
+
+        
+
+    <script>
+
+
+
+      var letter = ["a" ,"b" ,"c" ,"d" ,"e" ,"f" ,"g" ,"h" ,"i" ,"j" ,"k" ,"l" ,"m" ,"n" ,"o" ,"p" ,"q" ,"r" ,"s" ,"t" ,"u" ,"v" ,"w" ,"x" ,"y" , "z"];
+      var randomLetter = Math.floor((Math.random() * 25));
+      var generatedLetter = letter[randomLetter];
+      console.log (generatedLetter);
+      var wins = 0;
+      var losses = 0;
+      var guessesLeft = 10;
+      var guessesSoFar = 0;
+    
+
+
+  
+
+
+
+
+          document.getElementById("victories").innerHTML = "Wins: " + wins;
+          document.getElementById("failures").innerHTML = "Losses: " + losses;
+          document.getElementById("guessesLeft").innerHTML = "Guesses Left: " + guessesLeft;
+          document.getElementById("guessesSoFar").innerHTML = "Guesses So Far: " + guessesSoFar;
+
+
+           document.onkeyup = function(event)
+             {   
+                  var userPress = event.key;
+
+
+                  if (userPress=== generatedLetter)
+                  {
+                    wins++;
+
+                    document.getElementById("victories").innerHTML = "Wins: " + wins;
+
+                    console.log (wins);
+
+                    randomLetter = Math.floor((Math.random() * 25)+1);
+                    generatedLetter = letter[randomLetter];
+                    console.log (generatedLetter);    
+
+                    guessesLeft = 10;
+                    guessesSoFar = 0;
+                    document.getElementById("guessesLeft").innerHTML = "Guesses Left: " + guessesLeft;
+                    document.getElementById("guessesSoFar").innerHTML = "Guesses So Far: " + guessesSoFar;
+
+
+
+                  }
+
+              else if (guessesLeft=== 0)
+              {
+                losses ++;
+                guessesLeft = 10;
+                guessesSoFar = 0;
+
+
+                document.getElementById("failures").innerHTML = "Losses: " + losses;
+                
+                 document.getElementById("guessesLeft").innerHTML = "Guesses Left: " + guessesLeft;
+
+                 document.getElementById("guessesSoFar").innerHTML = "Guesses So Far: " + guessesSoFar;
+
+                    randomLetter = Math.floor((Math.random() * 25)+1);
+                    generatedLetter = letter[randomLetter];
+                    console.log (generatedLetter);    
+
+
+              }
+
+
+                  else if (userPress!== generatedLetter)
+                  {
+
+                    guessesLeft --;
+                    document.getElementById("guessesLeft").innerHTML = "Guesses Left: " + guessesLeft;
+
+                    guessesSoFar ++;
+                    document.getElementById("guessesSoFar").innerHTML = "Guesses So Far: " + guessesSoFar;
+
+
+                  }
+
+              }
+
+      
+        //Need function to randomly select one of the objects in array while maintaining spaces
+      
+
+    </script>
+    
+  </body>
+</html>
